@@ -1,0 +1,92 @@
+Sign-up with valid data input
+
+Steps to reproduce:
+1. Open a browser and go to https://qa-complex-app-for-testing.herokuapp.com/
+2. Enter valid username, email, password in the registration form
+3. Click on the 'Sign up for OurApp' button
+
+Expected result:
+New user was created and logged in.
+On the header:
+The username identity, Create Post button,  Sign-out button are displayed
+On the main:
+Message "Hello 'username entered on the step 2', your feed is empty" is displayed
+
+
+
+Sign-in with valid credentials (no following)
+
+Steps to reproduce:
+1. Open a browser and go to https://qa-complex-app-for-testing.herokuapp.com/
+2. Enter a valid username that doesn't following anyone, a valid password in the login form
+3. Click on the 'Sign in' button
+
+Expected result:
+The user was logged in.  No posts displayed.
+On the header:
+The username identity, Create Post button,  Sign-out button are displayed
+On the main:
+Message "Hello 'username entered on the step 2', your feed is empty" is displayed
+
+
+
+Failed sign-in with invalid password
+
+Steps to reproduce:
+1. Open a browser and go to https://qa-complex-app-for-testing.herokuapp.com/
+2. Enter a valid username, invalid password in the  login form
+3. Click on the 'Sign in' button
+
+Expected result:
+The user wasn't logged in.
+On the header:
+Sign-in button is displayed. No username identity, Create post and Sign-out buttons.
+On the main:
+Warning message 'Invalid username / password' was displayed
+
+
+
+Failed sign-up with empty data input
+
+Steps to reproduce:
+1. Open a browser and go to https://qa-complex-app-for-testing.herokuapp.com/
+2. Leave all the registration form fields empty
+3. Click on the 'Sign up for OurApp' button
+
+Expected result:
+New user wasn't created and logged in.
+On the header:
+Sign-in button is displayed. No username identity, Create post and Sign-out buttons.
+On the main:
+Warning messages are displayed above each field of the registration form:
+Username - 'Username must be at least 3 characters.'
+Email - 'You must provide a valid email address.'
+Password - 'Password must be at least 12 characters.'
+
+
+
+Create post under valid credentials (visibility - 'Частное')
+
+Steps to reproduce:
+1. Open a browser and go to https://qa-complex-app-for-testing.herokuapp.com/
+2. Enter a valid username, a valid password in the  login form
+3. Click on the 'Sign in' button
+4. Click on the 'Create Post' button
+5. Enter a Post title
+6. Enter Post content
+7. Select 'Частное' on Select value
+8. Click on Save New Post button
+
+Expected result:
+New post was cteated and displayed.
+On the header:
+The username - 'Username entered on the step 2', Create post and Sign-out buttons
+On the main:
+Message "New post was successfully created"
+Post title link - 'Title entered on the step 5'
+Edit post link
+Delete post button
+Post Author link - 'Username entered on the step 2'
+Post Note - 'Note: This post was written for'
+Post visibility - 'One Person'
+Post content - 'Content entered on the step 6'

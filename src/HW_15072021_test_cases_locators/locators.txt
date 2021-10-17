@@ -1,0 +1,61 @@
+Sign-in page https://qa-complex-app-for-testing.herokuapp.com
+
+Sign-in form
+Username .//input[@placeholder='Username']
+Password .//input[@placeholder='Password']
+'Sign in' button .//button[text()='Sign In']
+
+Registration form
+Username .//input[@id='username-register']
+Email .//input[@id='email-register']
+Password .//input[@id='password-register']
+'Sign up for OurApp' button .//button[text()='Sign up for OurApp']
+Warning Username message .//div[contains(text(), 'Username must be at least 3 characters')]
+Warning Email message .//div[contains(text(), 'You must provide a valid email address')]
+Warning Password message .//div[contains(text(), 'Password must be at least 12 characters')]
+
+
+
+Home page https://qa-complex-app-for-testing.herokuapp.com
+
+Header:
+The username identity .//span[contains(text(), 'Username you logged in')]
+Create Post button .//a[@href='/create-post']
+Sign-out button .//button[text()='Sign Out']
+
+Main:
+Hello message for user not following.//div[@class='text-center']
+
+
+
+Create post page https://qa-complex-app-for-testing.herokuapp.com/create-post
+
+Header:
+The username identity .//span[contains(text(), 'Username you logged in')]
+Create Post button .//a[@href='/create-post']
+Sign-out button .//button[text()='Sign Out']
+
+Main:
+Post title .//input[@id="post-title"]
+Post content .//textarea[@id="post-body"]
+Select 'Частное' on Select value .//option[@value="One Person"]
+Save New Post button .//button[text() = 'Save New Post']
+
+
+
+After creation Post page https://qa-complex-app-for-testing.herokuapp.com/post/your post id
+
+Header:
+The username identity .//span[contains(text(), 'Username you logged in')]
+Create Post button .//a[@href='/create-post']
+Sign-out button .//button[text()='Sign Out']
+
+Main:
+Successfully created message .//div[text()='New post successfully created.']
+Post title - .//div[@class='d-flex justify-content-between']//h2[contains(text(), 'Title entered on the step 5 of test case')]
+Edit post link - .//a[@data-original-title="Edit"]
+Delete post button - .//button[@data-original-title='Delete']
+Post Author link .//a[contains(text(), 'Username entered on the step 2')]
+Post Note - .//div[@class='body-content']//i[contains(text(), 'Note: This post was written for')]
+Post visibility .//div[@class='body-content']//u[contains(text(), 'One Person')]
+POst content - .//p[contains(text(), 'Content entered on the step 6')]

@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+    <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+    <option name="PROGRAM_PARAMETERS" value="--plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter" />
+    <shortenClasspath name="NONE" />
+    <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+    <method v="2">
+      <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean" />
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
